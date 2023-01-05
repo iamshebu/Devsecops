@@ -1,5 +1,8 @@
 pipeline {
 	agent any
+	tools { 
+        maven 'Maven_3_8_7'  
+    }
 	stages{
   	stage('RunSCAAnalysisUsingSnyk') {
             steps {		
